@@ -19,13 +19,13 @@ struct NewToDoView: View {
             Toggle(isOn: $isImportant) {
                 Text("Is it Important?")
             }
-        }.padding()
-        Button(action: {
             
-        }) {
-            Text("Add")
-        }
-        
+            Button(action: {
+                
+            }) {
+                Text("Add")
+            }
+        }.padding()
         
     }
 }
