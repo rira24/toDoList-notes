@@ -10,9 +10,11 @@ class ToDoItem: Identifiable{
     var id = UUID()
     var title = ""
     var isImportant = false
+    var notes = ""
     
-init(title: String, isImportant: Bool = false) {
+    init(title: String, isImportant: Bool = false, notes: String) {
             self.title = title
             self.isImportant = isImportant
+            self.notes = notes
         }
 }

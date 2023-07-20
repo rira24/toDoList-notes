@@ -11,36 +11,44 @@ struct NewToDoView: View {
     @Environment(\.managedObjectContext) var context
     @State var title: String
     @State var isImportant: Bool
+    @State var notes: String
  
     @Binding var showNewTask : Bool
     var body: some View {
-        VStack {
-            Text("Task Title:")
-                .fontWeight(.bold)
-            
-            TextField("Enter the task description...", text: $title)
-            
-            Toggle(isOn: $isImportant) {
-                Text("Is it Important?")
-            }
-            
-            Button(action:
-                    {self.addTask(title: self.title, isImportant: self.isImportant); self.showNewTask = false
+        
+            VStack {
+                Text("Title:")
+                    .fontWeight(.bold)
                 
+                TextField("Enter the title...", text: $title)
                 
-            }) {
-                Text("Add")
+                //            Toggle(isOn: $isImportant) {
+                //                Text("Is it Important?")
+                //            }
+                Text("Notes:")
+                    .fontWeight(.medium)
                 
-            }
-            
-        }.padding()
+                TextField("Enter your notes...", text: $notes)
+                
+                Button(action:
+                        {self.addTask(title: self.title, notes: self.notes); self.showNewTask = false
+                    
+                    
+                }) {
+                    Text("Add")
+                    
+                }
+                
+            }.padding()
+        
         
     }
-    private func addTask(title: String, isImportant: Bool = false) {
+    private func addTask(title: String, isImportant: Bool = false, notes: String) {
         let task = ToDo(context: context)
         task.id = UUID()
         task.title = title
-        task.isImportant = isImportant
+        task.notes = notes
+       // task.isImportant = isImportant
                 
         do {
                     try context.save()
@@ -53,7 +61,7 @@ struct NewToDoView: View {
 
 struct NewToDoView_Previews: PreviewProvider {
     static var previews: some View {
-        NewToDoView(title: "", isImportant: false, showNewTask: .constant(true))
+        NewToDoView(title: "", isImportant: false, notes: "",showNewTask: .constant(true))
     }
     
 }
