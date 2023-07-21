@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD17B8CB2A6AED7A00E9097B /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17B8CA2A6AED7A00E9097B /* ToDoItem.swift */; };
+		BD17B8CD2A6AED8100E9097B /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD17B8CC2A6AED8100E9097B /* NewToDoView.swift */; };
 		BD6C87F82A61D525005A0828 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C87F72A61D525005A0828 /* NewToDoView.swift */; };
 		BD8993D92A698334004E9B3B /* toDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD8993D72A698333004E9B3B /* toDoList.xcdatamodeld */; };
 		BD8B52392A61D06400AD14DE /* toDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B52382A61D06400AD14DE /* toDoListApp.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD17B8CA2A6AED7A00E9097B /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		BD17B8CC2A6AED8100E9097B /* NewToDoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 		BD6C87F72A61D525005A0828 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 		BD8993D82A698333004E9B3B /* toDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoList.xcdatamodel; sourceTree = "<group>"; };
 		BD8B52352A61D06400AD14DE /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +111,8 @@
 				BD8B523A2A61D06400AD14DE /* ContentView.swift */,
 				BD6C87F72A61D525005A0828 /* NewToDoView.swift */,
 				BD8B52622A61D0E700AD14DE /* ToDoItem.swift */,
+				BD17B8CA2A6AED7A00E9097B /* ToDoItem.swift */,
+				BD17B8CC2A6AED8100E9097B /* NewToDoView.swift */,
 				BD8B523C2A61D06600AD14DE /* Assets.xcassets */,
 				BD8B523E2A61D06600AD14DE /* Preview Content */,
 				BD8993D72A698333004E9B3B /* toDoList.xcdatamodeld */,
@@ -271,10 +277,12 @@
 			files = (
 				BD8B523B2A61D06400AD14DE /* ContentView.swift in Sources */,
 				BD8993D92A698334004E9B3B /* toDoList.xcdatamodeld in Sources */,
+				BD17B8CB2A6AED7A00E9097B /* ToDoItem.swift in Sources */,
 				BD8B52392A61D06400AD14DE /* toDoListApp.swift in Sources */,
 				BD8B52632A61D0E700AD14DE /* ToDoItem.swift in Sources */,
 				BD6C87F82A61D525005A0828 /* NewToDoView.swift in Sources */,
 				BDCDF43B2A6712D600EC1909 /* Persistence.swift in Sources */,
+				BD17B8CD2A6AED8100E9097B /* NewToDoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
